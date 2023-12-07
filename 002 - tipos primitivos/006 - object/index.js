@@ -45,8 +45,8 @@ console.log({
     celular:{
     modelo:"Motorola",
     cor: "Azul",
-    armazenamento: "128GB"
+    armazenamento: "128GB",
+    },
     
-    }
 
 })

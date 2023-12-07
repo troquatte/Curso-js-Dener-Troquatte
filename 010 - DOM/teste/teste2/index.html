@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form class="botao">
+        <div class="header">
+            <img src="./imagens/unnamed.png" alt="imc">
+            <h1>Calculando IMC</h1>
+        </div>
+        <div class="container">
+            <label class="kg" for="peso">Peso</label>
+            <input type="number" id="peso" class="peso" minlength="3">
+            <label class="metros" for="altura">Altura</label>
+            <input type="number" id="altura" class="altura" step="0.01" minlength="3">
+            <button id="Submit" type="button">Submit</button>
+        </div>
+    </form>
+    <div id="resultado" class="resultado">
+       
+    </div>
+</body>
+</html>

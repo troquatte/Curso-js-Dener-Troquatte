@@ -8,7 +8,7 @@
 
 }*/
 
-/*if (!null){
+if (!null){
      console.log("Falsy or False")
 
 }
@@ -16,10 +16,5 @@
 if(1+1){
   console.log("True")
 
-}*/
+}
 
-setTimeout(() => {
-    console.log("Meu timer foi iniciado!");
-  }, 10000);
-  
-  console.log("Meu console!");

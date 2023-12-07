@@ -4,7 +4,7 @@
   3 - Não tem Hoisting
   4 - Arguments
 */
-function nomeFunc(){
+/*function nomeFunc(){
   return "Bruno Soares";
  }
 
@@ -59,11 +59,27 @@ const lanches = {
 meuPedidoFunc: function(select){
    return console.log(this.cardapio[select]);
 },
+meuPedidoFuncTimeOut: function(select){
+setTimeout(function(){
+    console.log(this.cardapio[select]);
+
+    
+ }.bind(this) //.bind() Chama o this pai
+ ,1000);
 
 
-
-}
-  
+},
+meuPedidoArrowFunc: (select) => {
+    this.cardapio = [
+        { nome: "x-salada", preco: "R$25"},
+        { nome: "x-tudo", preco: "R$25"},];
+   
+    return console.log(this.cardapio[select])
+},
+};
+lanches.meuPedidoFunc(0)  
+lanches.meuPedidoArrowFunc(0) 
+lanches.meuPedidoFuncTimeOut(0)
 
 
 
@@ -81,3 +97,12 @@ meuPedidoFunc: function(select){
   Arrow functions não podem ser constructors, então não é possível usar o operador 
   new com a mesma.
 */
+
+class newFunc{
+   constructor(nome){
+   this.nome = nome;
+   }
+}
+
+const a = new newFunc("Bruno");
+console.log(a.nome);

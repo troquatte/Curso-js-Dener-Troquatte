@@ -14,13 +14,31 @@
  Entre 35 e 39.99   | Obesidade II
  */
 
- const peso = Number(83);
+ const peso = Number(60);
  const altura = Number(1.7);
- let imc =Number((peso / (altura * altura))).toFixed(2);
+ let imc =Number(peso / (altura * altura)).toFixed(2);
 
  console.log(`Seu IMC é de ${imc}`);
 
- switch (true) {
+ if( imc < 17){
+    console.log("Muito abaixo do peso");
+} else if(imc >= 17 && imc <= 18.49){
+    console.log("abaixo do peso");
+
+} else if(imc >= 18.5 && imc <=24.99){
+    console.log("Peso Normal");
+
+} else if(imc >= 25 && imc <=29.99){
+    console.log("Acima do Peso");
+
+} else if(imc >= 30 && imc <=34.99){
+    console.log("Obesidade I");
+
+} else if(imc >= 35 && imc <=39.99){
+    console.log("Obesidade II")
+}  
+
+switch (true) {
     case imc < 17:
         console.log("Muito abaixo do peso")
         break;
@@ -42,3 +60,6 @@
     default:
         break;
  }
+
+     
+

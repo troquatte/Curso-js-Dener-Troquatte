@@ -1,5 +1,5 @@
 /**
-   =, += -= *=   operadores de atribuição
+   =, += -= *= /=  operadores de atribuição
  */
 
    let a = 1;

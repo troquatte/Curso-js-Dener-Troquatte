@@ -12,3 +12,4 @@ function foo() {
   }
   
   var bar = "Hello, world!";
+  console.log(foo())
